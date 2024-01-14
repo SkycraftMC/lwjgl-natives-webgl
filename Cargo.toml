@@ -1,5 +1,5 @@
 [package]
-name = "lwjgl-natives-webgl"
+name = "lwjgl"
 version = "0.1.0"
 authors = ["firecoder1 <github@skyfall.33mail.com>"]
 edition = "2018"
