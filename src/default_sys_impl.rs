@@ -6,10 +6,8 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
 pub fn Java_org_lwjgl_DefaultSysImplementation_getJNIVersion(lib: &JsValue) -> i32 {
-    let get_required_jni_version = get_java_method(
-        "org.lwjgl.DefaultSysImplementation.getJNIVersion".to_string(),
-        lib,
-    );
+    let get_required_jni_version =
+        get_java_method("org.lwjgl.DefaultSysImplementation.getJNIVersion", lib).unwrap();
 
     get_required_jni_version
         .call0(&JsValue::undefined())

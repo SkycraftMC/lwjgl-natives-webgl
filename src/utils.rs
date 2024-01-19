@@ -16,10 +16,10 @@ use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen(module = "/js/util.js")]
 extern "C" {
-    fn getMethodFromCJLib(method: String, lib: &JsValue) -> Function;
+    fn getMethodFromCJLib(method: &str, lib: &JsValue) -> Option<Function>;
 }
 
-pub fn get_java_method(method: String, lib: &JsValue) -> Function {
+pub fn get_java_method(method: &str, lib: &JsValue) -> Option<Function> {
     // call JS
     getMethodFromCJLib(method, lib)
 }
