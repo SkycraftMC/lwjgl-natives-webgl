@@ -1,0 +1,10 @@
+$warning-background-color: #FEE75C;
+
+.callout {
+    width: 100%;
+    padding: 1.3rem;
+}
+.callout-warning {
+    background-color: $warning-background-color;
+    color: #721c24;
+}

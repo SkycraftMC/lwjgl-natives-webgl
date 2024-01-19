@@ -1,0 +1,19 @@
+{
+  "name": "testpage",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^3.0.1",
+    "svelte-preprocess": "^5.1.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-top-level-await": "^1.4.1",
+    "vite-plugin-wasm": "^3.3.0"
+  }
+}

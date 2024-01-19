@@ -1,7 +1,7 @@
 #![allow(non_snake_case)]
-mod utils;
+pub mod utils;
 
-mod mem;
+pub mod default_sys_impl;
 
 use cfg_if::cfg_if;
 use wasm_bindgen::prelude::*;
