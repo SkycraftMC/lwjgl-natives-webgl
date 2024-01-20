@@ -16,11 +16,6 @@ export function getMethodFromCJLib(method, lib) {
     if (!currentLib) {
       return undefined;
     }
-    console.log(currentLib);
   }
   return currentLib;
-}
-
-export function consoleTable(obj) {
-  console.table(obj);
 }
