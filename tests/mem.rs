@@ -3,7 +3,7 @@
 #![cfg(target_arch = "wasm32")]
 
 extern crate wasm_bindgen_test;
-use wasm_bindgen_test::{wasm_bindgen_test_configure, *};
+use wasm_bindgen_test::*;
 
 use lwjgl::default_sys_impl::Java_org_lwjgl_DefaultSysImplementation_getPointerSize;
 

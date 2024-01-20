@@ -12,8 +12,6 @@ pub fn set_panic_hook() {
     console_error_panic_hook::set_once();
 }
 
-use wasm_bindgen::prelude::*;
-
 #[wasm_bindgen(module = "/js/util.js")]
 extern "C" {
     fn getMethodFromCJLib(method: &str, lib: &JsValue) -> Option<Function>;
