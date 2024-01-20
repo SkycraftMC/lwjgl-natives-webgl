@@ -7,6 +7,8 @@ use wasm_bindgen_test::*;
 
 use lwjgl::utils::get_java_method;
 
+wasm_bindgen_test_configure!(run_in_browser);
+
 #[wasm_bindgen_test]
 pub fn get_java_method_gets_method() -> Result<(), JsValue> {
     const TEST_PASSED_MARKER: &str = "TEST_PASSED";
